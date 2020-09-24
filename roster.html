@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      body {
+        font-family: Garamond;
+        padding-left: 20%;
+        padding-right: 20%;
+        background-color: #FFFFF0;
+      }
+      label {
+        display: block;
+      }
+      input {
+        display: block;
+
+      }
+      textarea {
+        display: block;
+
+      }
+      form {
+        background-color: #89cff0;
+        padding: 20px 20px 20px 20px;
+      }
+      .radio-inline {
+        display: inline-block;
+      }
+      .checkbox-inline {
+        display: inline-block;
+      }
+      </style>
+  </head>
+
+<body>
+  <h1 id="title">What movies to watch for 2021?</h1>
+<div id="img-div" style="position: absolute" ; width: 100%; height:>
+  <img src="imgTV/Sharp_Objects.jpg" style="width:100%" alt="SO" id="image" </img>
+<p id="description">
+  This is a survey where you can choose which niche genre you would most likely watch on streaming services
+</p>
+<form id="survey-form">
+  <label id="name-label">Name:</label>
+  <input type="text" name="name" id="name" required placeholder="Name"></input><br>
+  <label id="email-label">Email: <label>
+  <input type="email" name="email" id="email" required placeholder="Email"></input><br>
+  <label id="number-label">Number: <label>
+  <input type="number" name="number" id="number" min="0" max="10" required placeholder="#"></input><br>
+
+<label id="genre">Which genre do you prefer?</label>
+<select id="dropdown" name="genres">
+  <option value="gothic romance">Gothic Romance</option>
+  <option value="southern psychological thriller">Southern Psychological Thriller</option>
+  <option value="high concept sci fi">High Concept Sci-Fi</option>
+  <option value="50s movie star biopic">50s Movie Star Biopic</option>
+</select>
+<br>
+<br>
+<label id="main character">Which main character do you prefer to lead the show?</label>
+<input type="radio" class="radio-inline" name="gender" value="male">Male</br>
+<input type="radio" class="radio-inline" name="gender" value="female">Female</br>
+<input type="radio" class="radio-inline" name="gender" value="other">Other</br>
+<br>
+
+<label id="streaming">Where do you watch TV and Movies?</label>
+<input type="checkbox" class="checkbox-inline" name="hbomax" value="hbomax">HBO Max<br>
+<input type="checkbox" class="checkbox-inline" name="netflix" value="netflix">Netflix<br>
+<input type="checkbox" class="checkbox-inline" name="disneyplus" value="disneyplus">Disney Plus<br>
+<input type="checkbox" class="checkbox-inline" name="movietheatre" value="movietheatre">Movie Theatre<br>
+<input type="checkbox" class="checkbox-inline" name="peacock" value="peacock">Peacock<br>
+<br>
+<textarea placeholder="Additional Comments"></textarea>
+<br>
+<input type="submit" id="submit">
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
